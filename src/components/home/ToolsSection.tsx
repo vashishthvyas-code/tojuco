@@ -1,3 +1,5 @@
+import Container from "@/components/layout/Container";
+
 const roles = [
   { name: "James D.", label: "Admin", labelColor: "text-[#337dff]", avatar: "from-[#98bdfd] to-[#337dff]" },
   { name: "Laura S.", label: "Vendor", labelColor: "text-[#ff8604]", avatar: "from-[#ffa2a2] to-[#ff8604]" },
@@ -6,8 +8,8 @@ const roles = [
 
 export default function ToolsSection() {
   return (
-    <section className="flex w-full flex-col items-center px-6 py-20 md:px-[120px] md:py-36">
-      <div className="flex w-full flex-col items-center gap-8">
+    <section className="w-full py-20 md:py-36">
+      <Container className="flex flex-col items-center gap-8">
         <h2 className="text-center text-4xl font-bold text-black capitalize md:text-[64px]">
           Built to replace disconnected tools
         </h2>
@@ -15,7 +17,7 @@ export default function ToolsSection() {
           Tojuco cuts through the noise. One platform replaces the five tools you&apos;re already paying for.
         </p>
 
-        <div className="mt-6 flex w-full max-w-[1208px] flex-col gap-6">
+        <div className="mt-6 flex w-full flex-col gap-6">
           {/* Row 1: White-label portals + Scheduling */}
           <div className="flex flex-col gap-6 lg:flex-row">
             <div className="flex flex-1 flex-col gap-5 rounded-lg border border-[#d9d9d9] bg-white p-5">
@@ -106,7 +108,7 @@ export default function ToolsSection() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

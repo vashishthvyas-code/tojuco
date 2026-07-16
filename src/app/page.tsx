@@ -11,7 +11,7 @@ import FooterEnd from "@/components/layout/FooterEnd";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-start bg-white">
+    <div className="flex min-h-screen flex-col bg-white">
       <Header />
       <HeroSection />
       <ServicesTicker />

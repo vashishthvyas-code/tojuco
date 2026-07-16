@@ -8,6 +8,7 @@ import {
   Users,
   type LucideIcon,
 } from "lucide-react";
+import Container from "@/components/layout/Container";
 
 type Feature = {
   icon: LucideIcon;
@@ -57,25 +58,27 @@ const features: Feature[] = [
 
 export default function WorkflowFeatures() {
   return (
-    <section id="features" className="flex w-full flex-col items-center gap-20 bg-white px-6 py-20 md:px-[120px] md:py-36">
-      <h2 className="text-center text-4xl font-bold text-black md:text-[64px]">Every part of your workflow</h2>
-      <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-        {features.map(({ icon: Icon, title, description, checklist }) => (
-          <div key={title} className="flex flex-col items-start gap-5 rounded-lg border border-[#d9d9d9] p-5">
-            <Icon className="size-8 text-[#337dff]" strokeWidth={1.5} />
-            <p className="text-2xl font-medium text-black">{title}</p>
-            <p className="text-lg text-black">{description}</p>
-            <div className="flex flex-col gap-3 text-base">
-              {checklist.map((item) => (
-                <div key={item} className="flex items-center gap-2">
-                  <CheckCircle2 className="size-4 shrink-0 text-[#337dff]" />
-                  <p className="font-medium text-black">{item}</p>
-                </div>
-              ))}
+    <section id="features" className="w-full bg-white py-20 md:py-36">
+      <Container className="flex flex-col items-center gap-20">
+        <h2 className="text-center text-4xl font-bold text-black md:text-[64px]">Every part of your workflow</h2>
+        <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {features.map(({ icon: Icon, title, description, checklist }) => (
+            <div key={title} className="flex flex-col items-start gap-5 rounded-lg border border-[#d9d9d9] p-5">
+              <Icon className="size-8 text-[#337dff]" strokeWidth={1.5} />
+              <p className="text-2xl font-medium text-black">{title}</p>
+              <p className="text-lg text-black">{description}</p>
+              <div className="flex flex-col gap-3 text-base">
+                {checklist.map((item) => (
+                  <div key={item} className="flex items-center gap-2">
+                    <CheckCircle2 className="size-4 shrink-0 text-[#337dff]" />
+                    <p className="font-medium text-black">{item}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </Container>
     </section>
   );
 }

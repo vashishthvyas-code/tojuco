@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function FeaturesPage() {
   return (
-    <div className="flex flex-col items-start bg-white">
+    <div className="flex min-h-screen flex-col bg-white">
       <Header active="Features" primaryCta={{ label: "Book a Demo", href: "#book-demo" }} />
       <FeaturesHero />
       <FeaturesGrid />

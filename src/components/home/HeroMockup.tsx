@@ -84,7 +84,7 @@ function ListingCard({ listing, showStatus }: { listing: (typeof listings)[numbe
 
 export default function HeroMockup() {
   return (
-    <div className="relative mx-auto hidden h-[731px] w-[1200px] shrink-0 lg:block">
+    <div className="relative mx-auto hidden h-[731px] w-[1200px] shrink-0 xl:block">
       {/* Listings panel */}
       <div className="absolute top-[129px] left-[110px] flex h-[478px] w-[944px] flex-col gap-[24px] overflow-hidden rounded-lg bg-[#e9e9e9] p-[14px] shadow-[0px_0px_14px_0px_rgba(0,0,0,0.25)]">
         <div className="flex w-full items-center gap-[15px] text-[9.8px] whitespace-nowrap text-black">

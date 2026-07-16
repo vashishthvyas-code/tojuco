@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Camera, ClipboardList, CreditCard, Truck, UploadCloud, Users } from "lucide-react";
+import Container from "@/components/layout/Container";
 
 const stepIcons = [ClipboardList, Camera, Users, UploadCloud, CreditCard, Truck];
 
@@ -16,49 +17,51 @@ const steps = [
 
 export default function ServiceWorkflow() {
   return (
-    <section className="flex w-full flex-col items-center gap-20 bg-white px-6 py-20 md:px-[120px] md:py-36">
-      <div className="flex w-full flex-col items-center gap-8 text-center text-black">
-        <h2 className="text-4xl font-bold md:text-[64px]">Built for every service category</h2>
-        <p className="max-w-[560px] text-lg md:text-xl">
-          Services are what media companies sell to agents. Platform features support those services.
-        </p>
-      </div>
+    <section className="w-full bg-white py-20 md:py-36">
+      <Container className="flex flex-col items-center gap-20">
+        <div className="flex w-full flex-col items-center gap-8 text-center text-black">
+          <h2 className="text-4xl font-bold md:text-[64px]">Built for every service category</h2>
+          <p className="max-w-[560px] text-lg md:text-xl">
+            Services are what media companies sell to agents. Platform features support those services.
+          </p>
+        </div>
 
-      <div className="flex w-full flex-col gap-11">
-        <div className="hidden w-full items-center gap-3 lg:flex">
-          {stepIcons.map((Icon, index) => (
-            <div key={index} className="flex flex-1 items-center gap-3 last:flex-none">
-              <div className="flex w-[87px] shrink-0 items-center justify-center rounded-lg bg-[#d5e4ff] p-4">
-                <Icon className="size-10 text-[#337dff]" strokeWidth={1.5} />
-              </div>
-              {index < lines.length && (
-                <div className="relative flex-1">
-                  <Image
-                    src={lines[index]}
-                    alt=""
-                    width={100}
-                    height={2}
-                    className="h-auto w-full"
-                  />
+        <div className="flex w-full flex-col gap-11">
+          <div className="hidden w-full items-center gap-3 lg:flex">
+            {stepIcons.map((Icon, index) => (
+              <div key={index} className="flex flex-1 items-center gap-3 last:flex-none">
+                <div className="flex w-[87px] shrink-0 items-center justify-center rounded-lg bg-[#d5e4ff] p-4">
+                  <Icon className="size-10 text-[#337dff]" strokeWidth={1.5} />
                 </div>
-              )}
-            </div>
-          ))}
-        </div>
+                {index < lines.length && (
+                  <div className="relative flex-1">
+                    <Image
+                      src={lines[index]}
+                      alt=""
+                      width={100}
+                      height={2}
+                      className="h-auto w-full"
+                    />
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
 
-        <div className="grid w-full grid-cols-2 gap-6 text-black sm:grid-cols-3 lg:grid-cols-6">
-          {steps.map((step) => (
-            <div key={step.title} className="flex flex-col gap-6">
-              <p className="text-2xl font-semibold">{step.title}</p>
-              <p className="text-base">
-                {step.lines[0]}
-                <br />
-                {step.lines[1]}
-              </p>
-            </div>
-          ))}
+          <div className="grid w-full grid-cols-2 gap-6 text-black sm:grid-cols-3 lg:grid-cols-6">
+            {steps.map((step) => (
+              <div key={step.title} className="flex flex-col gap-6">
+                <p className="text-2xl font-semibold">{step.title}</p>
+                <p className="text-base">
+                  {step.lines[0]}
+                  <br />
+                  {step.lines[1]}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

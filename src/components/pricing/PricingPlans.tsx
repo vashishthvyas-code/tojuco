@@ -1,4 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
+import Container from "@/components/layout/Container";
 
 const basicFeatures = ["Lorem ipsum dolor sit amet,", "consectetur adipiscing elit.", "In id sollicitudin massa."];
 
@@ -13,8 +14,8 @@ const standardFeatures = [
 
 export default function PricingPlans() {
   return (
-    <section className="flex w-full flex-col items-center bg-white px-6 py-20 md:px-[120px] md:py-36">
-      <div className="flex w-full max-w-[1201px] flex-col items-stretch gap-6 lg:flex-row">
+    <section className="w-full bg-white py-20 md:py-36">
+      <Container className="flex flex-col items-stretch gap-6 lg:flex-row">
         {/* Basic plan */}
         <div className="flex w-full flex-col items-start gap-5 rounded-lg border border-[#d9d9d9] bg-white p-5 lg:w-[387px]">
           <div className="flex items-center rounded-full border border-[#337dff] px-8 py-1">
@@ -75,7 +76,7 @@ export default function PricingPlans() {
             ))}
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

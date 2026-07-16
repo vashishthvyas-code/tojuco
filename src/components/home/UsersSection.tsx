@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
+import Container from "@/components/layout/Container";
 
 const roles = [
   {
@@ -33,14 +34,15 @@ const roles = [
 
 export default function UsersSection() {
   return (
-    <section className="flex w-full flex-col items-center gap-20 px-6 py-20 md:px-[120px] md:py-36">
-      <div className="flex w-full flex-col items-center gap-8 text-center text-black">
-        <h2 className="text-4xl font-bold md:text-[64px]">A better experience for every user</h2>
-        <p className="max-w-[560px] text-lg md:text-xl">
-          The same platform adapts to each role — see what admins, agents, and vendors actually work with.
-        </p>
-      </div>
-      <div className="flex w-full max-w-[1200px] flex-col items-start gap-5 lg:flex-row">
+    <section className="w-full py-20 md:py-36">
+      <Container className="flex flex-col items-center gap-20">
+        <div className="flex w-full flex-col items-center gap-8 text-center text-black">
+          <h2 className="text-4xl font-bold md:text-[64px]">A better experience for every user</h2>
+          <p className="max-w-[560px] text-lg md:text-xl">
+            The same platform adapts to each role — see what admins, agents, and vendors actually work with.
+          </p>
+        </div>
+        <div className="flex w-full flex-col items-start gap-5 lg:flex-row">
         {roles.map((role) => (
           <div key={role.label} className="flex flex-1 flex-col items-start gap-5 rounded-lg border border-[#d9d9d9] bg-white p-5">
             <p className={`text-lg ${role.labelColor}`}>{role.label}</p>
@@ -64,7 +66,8 @@ export default function UsersSection() {
             </div>
           </div>
         ))}
-      </div>
+        </div>
+      </Container>
     </section>
   );
 }

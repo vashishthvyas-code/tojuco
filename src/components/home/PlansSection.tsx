@@ -1,4 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
+import Container from "@/components/layout/Container";
 
 const basicFeatures = ["Lorem ipsum dolor sit amet,", "consectetur adipiscing elit.", "In id sollicitudin massa."];
 
@@ -22,15 +23,16 @@ const standardFeaturesCol2 = [
 
 export default function PlansSection() {
   return (
-    <section id="pricing" className="flex w-full flex-col items-center gap-20 px-6 py-20 md:px-[120px] md:py-36">
-      <div className="flex w-full flex-col items-center gap-8 text-center text-black">
-        <h2 className="text-4xl font-bold md:text-[64px]">Plans that scale with your media business</h2>
-        <p className="max-w-[560px] text-lg md:text-xl">
-          No free tier, no surprises. Start solo and grow into a full white-label operation.
-        </p>
-      </div>
+    <section id="pricing" className="w-full py-20 md:py-36">
+      <Container className="flex flex-col items-center gap-20">
+        <div className="flex w-full flex-col items-center gap-8 text-center text-black">
+          <h2 className="text-4xl font-bold md:text-[64px]">Plans that scale with your media business</h2>
+          <p className="max-w-[560px] text-lg md:text-xl">
+            No free tier, no surprises. Start solo and grow into a full white-label operation.
+          </p>
+        </div>
 
-      <div className="flex w-full max-w-[1208px] flex-col items-center gap-10">
+        <div className="flex w-full flex-col items-center gap-10">
         <div className="flex w-full flex-col items-stretch gap-6 lg:flex-row">
           {/* Basic plan */}
           <div className="flex w-full flex-col items-start gap-5 rounded-lg border border-[#d9d9d9] bg-white p-5 lg:w-[520px]">
@@ -104,7 +106,8 @@ export default function PlansSection() {
           </div>
         </div>
         <p className="text-center text-lg text-[#337dff]">Get in touch for enterprise pricing</p>
-      </div>
+        </div>
+      </Container>
     </section>
   );
 }
