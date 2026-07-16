@@ -23,7 +23,7 @@ export default function FooterEnd() {
 
         <div className="flex flex-col items-start gap-7 text-lg font-medium text-black">
           {solutionLinks.map((link) => (
-            <Link key={link.label} href={link.href}>
+            <Link key={link.label} href={link.href} className="hover:text-[#337dff]">
               {link.label}
             </Link>
           ))}

@@ -23,13 +23,13 @@ export default function HeroSection() {
           <div className="flex flex-wrap items-start justify-center gap-6">
             <a
               href="#free-trial"
-              className="w-[191px] rounded-lg bg-[#337dff] px-6 py-4 text-center text-lg font-bold text-white"
+              className="w-[191px] rounded-lg bg-[#337dff] px-6 py-4 text-center text-lg font-bold text-white hover:-translate-y-0.5 hover:bg-[#2563eb] hover:shadow-lg active:translate-y-0"
             >
               Free Trial
             </a>
             <a
               href="#how-it-works"
-              className="rounded-lg border border-[#98bdfd] px-6 py-4 text-lg font-bold text-black"
+              className="rounded-lg border border-[#98bdfd] px-6 py-4 text-lg font-bold text-black hover:-translate-y-0.5 hover:border-[#337dff] hover:shadow-lg active:translate-y-0"
             >
               See How It Works
             </a>

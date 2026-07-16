@@ -15,7 +15,7 @@ export default function BrandingSection() {
           </p>
           <a
             href="#white-label"
-            className="rounded-lg bg-[#337dff] px-6 py-4 text-lg font-bold text-white"
+            className="rounded-lg bg-[#337dff] px-6 py-4 text-lg font-bold text-white hover:-translate-y-0.5 hover:bg-[#2563eb] hover:shadow-lg active:translate-y-0"
           >
             Explore White Label Features
           </a>
@@ -28,7 +28,7 @@ export default function BrandingSection() {
             </div>
             <a
               href="#book-demo"
-              className="w-full rounded-lg border border-[#337dff] bg-white px-6 py-4 text-center text-lg font-bold text-[#337dff]"
+              className="w-full rounded-lg border border-[#337dff] bg-white px-6 py-4 text-center text-lg font-bold text-[#337dff] hover:-translate-y-0.5 hover:bg-[#eff5ff] hover:shadow-lg active:translate-y-0"
             >
               Book Demo
             </a>

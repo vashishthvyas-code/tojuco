@@ -29,7 +29,7 @@ export default function Header({
             <Link
               key={link.label}
               href={link.href}
-              className={`text-lg font-medium ${
+              className={`text-lg font-medium hover:text-[#337dff] ${
                 active === link.label ? "text-[#337dff]" : "text-black"
               }`}
             >
@@ -41,13 +41,13 @@ export default function Header({
         <div className="hidden items-center gap-5 md:flex">
           <a
             href={secondaryCta.href}
-            className="whitespace-nowrap rounded-lg border border-[#98bdfd] px-6 py-4 text-lg font-bold text-black"
+            className="whitespace-nowrap rounded-lg border border-[#98bdfd] px-6 py-4 text-lg font-bold text-black hover:-translate-y-0.5 hover:border-[#337dff] hover:shadow-lg active:translate-y-0"
           >
             {secondaryCta.label}
           </a>
           <a
             href={primaryCta.href}
-            className="whitespace-nowrap rounded-lg bg-[#337dff] px-6 py-4 text-lg font-bold text-white"
+            className="whitespace-nowrap rounded-lg bg-[#337dff] px-6 py-4 text-lg font-bold text-white hover:-translate-y-0.5 hover:bg-[#2563eb] hover:shadow-lg active:translate-y-0"
           >
             {primaryCta.label}
           </a>

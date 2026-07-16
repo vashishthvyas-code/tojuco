@@ -29,14 +29,14 @@ export default function FooterCta({
           <div className="flex flex-wrap items-start justify-center gap-6">
             <a
               href={primaryCta.href}
-              className="w-[191px] rounded-lg bg-white px-6 py-4 text-center text-lg font-bold text-black"
+              className="w-[191px] rounded-lg bg-white px-6 py-4 text-center text-lg font-bold text-black hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
             >
               {primaryCta.label}
             </a>
             {secondaryCta && (
               <a
                 href={secondaryCta.href}
-                className="rounded-lg border border-[#98bdfd] px-6 py-4 text-lg font-bold text-white"
+                className="rounded-lg border border-[#98bdfd] px-6 py-4 text-lg font-bold text-white hover:-translate-y-0.5 hover:border-white hover:bg-white/10 active:translate-y-0"
               >
                 {secondaryCta.label}
               </a>

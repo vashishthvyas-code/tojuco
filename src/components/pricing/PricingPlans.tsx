@@ -30,7 +30,7 @@ export default function PricingPlans() {
           </p>
           <a
             href="#get-started"
-            className="w-full rounded-lg border border-[#98bdfd] bg-white px-6 py-4 text-center text-lg font-bold text-black"
+            className="w-full rounded-lg border border-[#98bdfd] bg-white px-6 py-4 text-center text-lg font-bold text-black hover:-translate-y-0.5 hover:border-[#337dff] hover:shadow-lg active:translate-y-0"
           >
             Get Started
           </a>
@@ -63,7 +63,7 @@ export default function PricingPlans() {
           </p>
           <a
             href="#get-started"
-            className="w-full rounded-lg border border-[#98bdfd] bg-[#337dff] px-6 py-4 text-center text-lg font-bold text-white"
+            className="w-full rounded-lg border border-[#98bdfd] bg-[#337dff] px-6 py-4 text-center text-lg font-bold text-white hover:-translate-y-0.5 hover:bg-[#2563eb] hover:shadow-lg active:translate-y-0"
           >
             Get Started
           </a>

@@ -44,14 +44,20 @@ export default function FaqAccordion() {
               type="button"
               onClick={() => setOpenIndex(isOpen ? null : index)}
               aria-expanded={isOpen}
-              className="flex w-full items-start justify-between gap-6 text-left text-xl text-black"
+              className="flex w-full items-start justify-between gap-6 text-left text-xl text-black hover:text-[#337dff]"
             >
               <p>{faq.question}</p>
               <ChevronDown
-                className={`mt-1 size-5 shrink-0 transition-transform ${isOpen ? "rotate-180" : ""}`}
+                className={`mt-1 size-5 shrink-0 transition-transform duration-300 ease-in-out ${isOpen ? "rotate-180" : ""}`}
               />
             </button>
-            {isOpen && <p className="mt-4 text-base text-[#606060]">{faq.answer}</p>}
+            <div
+              className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
+                isOpen ? "mt-4 grid-rows-[1fr]" : "grid-rows-[0fr]"
+              }`}
+            >
+              <p className="overflow-hidden text-base text-[#606060]">{faq.answer}</p>
+            </div>
           </div>
         );
       })}
