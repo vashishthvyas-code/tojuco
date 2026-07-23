@@ -10,7 +10,7 @@ type FooterCtaProps = {
 export default function FooterCta({
   headline = "Ready to launch your branded media platform?",
   description = "Bring your orders, scheduling, media delivery, payments, and client experience into one connected system.",
-  primaryCta = { label: "Free Trial", href: "#free-trial" },
+  primaryCta = { label: "Book a Demo", href: "#book-demo" },
   secondaryCta = { label: "Explore Solutions", href: "/solutions" },
 }: FooterCtaProps) {
   return (

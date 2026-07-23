@@ -17,7 +17,7 @@ type HeaderProps = {
 export default function Header({
   active,
   secondaryCta = { label: "See How It Works", href: "#how-it-works" },
-  primaryCta = { label: "Free Trial", href: "#free-trial" },
+  primaryCta = { label: "Book a Demo", href: "#book-demo" },
 }: HeaderProps) {
   return (
     <header className="w-full bg-white shadow-[0px_4px_5px_rgba(0,0,0,0.05)]">

@@ -22,10 +22,10 @@ export default function HeroSection() {
           </p>
           <div className="flex flex-wrap items-start justify-center gap-6">
             <a
-              href="#free-trial"
+              href="#book-demo"
               className="w-[191px] rounded-lg bg-[#337dff] px-6 py-4 text-center text-lg font-bold text-white hover:-translate-y-0.5 hover:bg-[#2563eb] hover:shadow-lg active:translate-y-0"
             >
-              Free Trial
+              Book a Demo
             </a>
             <a
               href="#how-it-works"

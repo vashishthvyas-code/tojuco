@@ -141,8 +141,8 @@ function Header({ active, secondaryCta = {
     label: "See How It Works",
     href: "#how-it-works"
 }, primaryCta = {
-    label: "Free Trial",
-    href: "#free-trial"
+    label: "Book a Demo",
+    href: "#book-demo"
 } }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$tojuco$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
         className: "w-full bg-white shadow-[0px_4px_5px_rgba(0,0,0,0.05)]",
@@ -224,8 +224,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$tojuco$2f$src$2f$components$
 ;
 ;
 function FooterCta({ headline = "Ready to launch your branded media platform?", description = "Bring your orders, scheduling, media delivery, payments, and client experience into one connected system.", primaryCta = {
-    label: "Free Trial",
-    href: "#free-trial"
+    label: "Book a Demo",
+    href: "#book-demo"
 }, secondaryCta = {
     label: "Explore Solutions",
     href: "/solutions"
@@ -330,10 +330,6 @@ const solutionLinks = [
         href: "/solutions"
     },
     {
-        label: "Resources",
-        href: "/#resources"
-    },
-    {
         label: "Pricing",
         href: "/pricing"
     },
@@ -355,7 +351,7 @@ function FooterEnd() {
                             className: "h-10"
                         }, void 0, false, {
                             fileName: "[project]/tojuco/src/components/layout/FooterEnd.tsx",
-                            lineNumber: 17,
+                            lineNumber: 16,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$tojuco$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -363,13 +359,13 @@ function FooterEnd() {
                             children: "The white-label operating system for real estate media companies. Manage orders, scheduling, media delivery, payments, and client portals under your own brand."
                         }, void 0, false, {
                             fileName: "[project]/tojuco/src/components/layout/FooterEnd.tsx",
-                            lineNumber: 18,
+                            lineNumber: 17,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/tojuco/src/components/layout/FooterEnd.tsx",
-                    lineNumber: 16,
+                    lineNumber: 15,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$tojuco$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -380,12 +376,12 @@ function FooterEnd() {
                             children: link.label
                         }, link.label, false, {
                             fileName: "[project]/tojuco/src/components/layout/FooterEnd.tsx",
-                            lineNumber: 26,
+                            lineNumber: 25,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/tojuco/src/components/layout/FooterEnd.tsx",
-                    lineNumber: 24,
+                    lineNumber: 23,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$tojuco$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -396,20 +392,20 @@ function FooterEnd() {
                             children: "Email"
                         }, void 0, false, {
                             fileName: "[project]/tojuco/src/components/layout/FooterEnd.tsx",
-                            lineNumber: 33,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$tojuco$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             children: "support@tojuco.com"
                         }, void 0, false, {
                             fileName: "[project]/tojuco/src/components/layout/FooterEnd.tsx",
-                            lineNumber: 34,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/tojuco/src/components/layout/FooterEnd.tsx",
-                    lineNumber: 32,
+                    lineNumber: 31,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$tojuco$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -420,7 +416,7 @@ function FooterEnd() {
                             children: "Support Hours"
                         }, void 0, false, {
                             fileName: "[project]/tojuco/src/components/layout/FooterEnd.tsx",
-                            lineNumber: 38,
+                            lineNumber: 37,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$tojuco$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -428,31 +424,31 @@ function FooterEnd() {
                                 "Monday to Friday",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$tojuco$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/tojuco/src/components/layout/FooterEnd.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 40,
                                     columnNumber: 13
                                 }, this),
                                 "8am - 8pm"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/tojuco/src/components/layout/FooterEnd.tsx",
-                            lineNumber: 39,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/tojuco/src/components/layout/FooterEnd.tsx",
-                    lineNumber: 37,
+                    lineNumber: 36,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/tojuco/src/components/layout/FooterEnd.tsx",
-            lineNumber: 15,
+            lineNumber: 14,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/tojuco/src/components/layout/FooterEnd.tsx",
-        lineNumber: 14,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 }
