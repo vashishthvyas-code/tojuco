@@ -1,0 +1,5 @@
+{"timestamp":"00:00:01.282","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:12.068","source":"Server","level":"WARN","message":"⚠ Blocked cross-origin request to Next.js dev resource /_next/webpack-hmr from \"192.168.1.83\".\nCross-origin access to Next.js dev resources is blocked by default for safety.\n\nTo allow this host in development, add it to \"allowedDevOrigins\" in next.config.js and restart the dev server:\n\n// next.config.js\nmodule.exports = {\n  allowedDevOrigins: ['192.168.1.83'],\n}\n\nRead more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins"}
+{"timestamp":"00:44:18.471","source":"Server","level":"LOG","message":"✓ Compiled in 44ms"}
+{"timestamp":"00:44:18.785","source":"Server","level":"ERROR","message":"⨯ ReferenceError: HeroMockup is not defined"}
+{"timestamp":"00:44:31.055","source":"Server","level":"LOG","message":"✓ Compiled in 33ms"}

@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Container from "@/components/layout/Container";
-import HeroMockup from "./HeroMockup";
 
 export default function HeroSection() {
   return (
@@ -35,7 +35,16 @@ export default function HeroSection() {
             </a>
           </div>
         </div>
-        <HeroMockup />
+        <div className="relative aspect-[2470/1667] w-full max-w-[1200px]">
+          <Image
+            src="/images/home/hero-image.png"
+            alt="Tojuco platform dashboard"
+            fill
+            priority
+            sizes="(min-width: 1280px) 1200px, 100vw"
+            className="object-contain"
+          />
+        </div>
       </Container>
     </section>
   );
