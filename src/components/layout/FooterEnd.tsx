@@ -5,6 +5,8 @@ import Logo from "./Logo";
 const solutionLinks = [
   { label: "Solutions", href: "/solutions" },
   { label: "Pricing", href: "/pricing" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
   { label: "About Us", href: "/#about-us" },
 ];
 
